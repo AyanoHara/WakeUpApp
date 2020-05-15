@@ -56,6 +56,7 @@
         <!--Wake Up View Controller-->
         <scene sceneID="9JR-Dy-wkZ">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekT-xJ-dJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="setTime" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2hc-Qq-LjW" customClass="WakeUpViewController" customModule="WakeUpApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="313-V2-lu0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -71,6 +72,7 @@
                                 </state>
                                 <connections>
                                     <action selector="stopTimeAction:" destination="2hc-Qq-LjW" eventType="touchUpInside" id="K9O-R8-Tuf"/>
+                                    <segue destination="3Pk-kE-qOH" kind="show" identifier="videoView" id="SYv-mp-lxv"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alarm" translatesAutoresizingMaskIntoConstraints="NO" id="o3g-GP-U1H">
@@ -110,24 +112,24 @@
                         <outlet property="timeLabel" destination="Trr-zU-3P4" id="8WX-NK-A9p"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ekT-xJ-dJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1757.9710144927537" y="93.75"/>
         </scene>
         <!--Video View Controller-->
-        <scene sceneID="lkG-xH-Uek">
+        <scene sceneID="EfP-Lc-JkK">
             <objects>
-                <viewController id="sF4-Gz-4Zv" customClass="VideoViewController" customModule="WakeUpApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bIA-HA-oPN">
+                <viewController id="3Pk-kE-qOH" customClass="VideoViewController" customModule="WakeUpApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gsZ-V4-HxG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="JHq-0I-J52"/>
+                        <viewLayoutGuide key="safeArea" id="pKl-fh-IPm"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GpL-O8-uCm"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XYb-L5-pDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBg-oS-N6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2515.9420289855075" y="96.428571428571431"/>
+            <point key="canvasLocation" x="2567" y="89"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mvV-Bu-DW3">
